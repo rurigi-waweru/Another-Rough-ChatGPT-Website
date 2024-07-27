@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #000; /* Black background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: #333; /* Dark gray for contrast */
+            color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #222; /* Slightly lighter black for container */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 8px;
+            object-fit: cover; /* Ensure the image covers the area */
+            margin-bottom: 20px;
+        }
+        .product-details {
+            text-align: center;
+        }
+        .product h1 {
+            margin-top: 0;
+            color: #FF5733; /* Red color for headings */
+        }
+        .product p {
+            color: #fff; /* White text color for readability */
+        }
+        .product button {
+            background-color: #FFC107; /* Yellow button */
+            border: none;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #e0a800; /* Darker yellow on hover */
+        }
+        footer {
+            font-size: 14px;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            .product h1 {
+                font-size: 1.5em;
+            }
+            .product p {
+                font-size: 14px;
+            }
+            .product button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Product Showcase</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="product">
+                <img src="product-image.jpg" alt="Product Image">
+                <div class="product-details">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec convallis urna nec libero auctor, non scelerisque est fermentum.</p>
+                    <p><strong>Price:</strong> $99.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Product Showcase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
